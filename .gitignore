@@ -1,0 +1,8 @@
+*.dex
+*.class
+.settings
+
+twitter4j.properties
+
+bin
+gen

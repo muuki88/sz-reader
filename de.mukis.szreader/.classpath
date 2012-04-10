@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="lib" path="/home/muki/Development/target_platform/twitter/twitter4j-android-2.2.5/lib/twitter4j-core-android-2.2.5.jar" sourcepath="/home/muki/Development/target_platform/twitter/twitter4j-android-2.2.5/twitter4j-core/twitter4j-core-2.2.5-sources.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
