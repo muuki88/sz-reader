@@ -10,6 +10,7 @@ import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
 import android.app.ListActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 import de.mukis.szreader.adapter.StatusAdapter;
 
 public class SZTopicActivity extends ListActivity {
@@ -20,6 +21,7 @@ public class SZTopicActivity extends ListActivity {
 
 		Bundle extras = getIntent().getExtras();
 		String topic = extras.get("topic").toString();
+		System.out.println(topic);
 		try {
 			loadTweets(topic);
 		} catch (TwitterException e) {
@@ -33,7 +35,7 @@ public class SZTopicActivity extends ListActivity {
 		Calendar cal = Calendar.getInstance();
 		cal.add(Calendar.DAY_OF_YEAR, -2);
 		Paging paging = new Paging(cal.getTimeInMillis());
-		ResponseList<Status> timeline = twitter.getUserTimeline("SZ_Politik", paging);
+		ResponseList<Status> timeline = twitter.getUserTimeline(topic, paging);
 		StatusAdapter adapter = new StatusAdapter(this, android.R.layout.simple_list_item_1, timeline);
 		setListAdapter(adapter);
 	}
