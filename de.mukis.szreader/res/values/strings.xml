@@ -23,5 +23,8 @@
     </string-array>
 
     <string name="topic">Rubrik</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_szarticle">SZArticleActivity</string>
 
 </resources>
