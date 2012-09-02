@@ -2,18 +2,19 @@ package de.mukis.szreader;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.webkit.WebView;
 
 public class SZArticelActivity extends Activity {
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.articel);
-		
-		TextView articleHeader = (TextView) findViewById(R.id.articleHeader);
-//		articleHeader.setText(header);
-	}
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_szarticle);
+        
+        WebView wv = (WebView) findViewById(R.id.articleArea);
+        String url = getIntent().getExtras().get("url").toString();
+        wv.loadUrl(url);
+    }
 	
 
 }
