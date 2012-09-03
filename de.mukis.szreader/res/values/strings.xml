@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">SZReader</string>
-    <string-array name="topics">
-        <item >politic</item>
-        <item >economic</item>
+
+    <string-array name="displayNames">
+        <item>Top News</item>
+        <item>Digital</item>
+        <item>Politik</item>
+        <item>Wirtschaft</item>
+        <item>Wissenschaft</item>
+        <item>Eilmeldungen</item>
     </string-array>
-    <string name="topic_politic">Politik</string>
-    <string name="topic_economic">Wirtschaft</string>
+    <string-array name="twitterNames">
+        <item>SZ_TopNews</item>
+        <item>SZ_Digital</item>
+        <item>SZ_Politik</item>
+        <item>SZ_Wirtschaft</item>
+        <item>SZ_Wissen</item>
+        <item>SZ_Eilmeldungen</item>
+        <item>SZ_Sport</item>
+        <item>SZ_Rubrik</item>
+    </string-array>
+
     <string name="topic">Rubrik</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_szarticle">SZArticleActivity</string>
 
 </resources>
